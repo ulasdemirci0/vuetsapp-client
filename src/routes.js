@@ -13,8 +13,7 @@ const routes = [
     {
         path: "/index", component: index,
         beforeEnter: (to, from, next) => {
-            if (store.state.token.length > 0 || localStorage.getItem("token").length > 1) {
-                store.commit("setToken", localStorage.getItem("token"))
+            if (store.state.token.length > 1) {
                 next()
             } else {
                 next("/login")
