@@ -19,7 +19,7 @@ export default {
 
 <style>
 @import '~bootstrap/dist/css/bootstrap.min.css';
-
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

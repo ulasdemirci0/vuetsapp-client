@@ -52,7 +52,9 @@ export default {
                 "password": this.password
             }).then(function (response) {
                 localStorage.setItem("token", response.data.token);
-                vm.$store.commit("setToken", response.data.token);
+                localStorage.setItem("uid", response.data.uid)
+                vm.$store.commit("setToken", response.data.token)
+                vm.$store.commit("setUID", response.data.uid)
                 vm.$router.push("/index");
             });
 
